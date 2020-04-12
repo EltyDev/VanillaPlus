@@ -17,7 +17,7 @@ public class CraftEnchantedObsidian {
 		
 	    ItemStack obsi = new ItemStack(Material.OBSIDIAN, 2);
 	    ItemMeta mobsi = obsi.getItemMeta();
-	    mobsi.setDisplayName("Â§fEnchanted Obsidian");
+	    mobsi.setDisplayName("§fEnchanted Obsidian");
 	    mobsi.addEnchant(Enchantment.FIRE_ASPECT, 1, true);
 	    mobsi.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 	    obsi.setItemMeta(mobsi);

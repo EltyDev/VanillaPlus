@@ -17,14 +17,14 @@ public class CraftEnchantedIronBlock {
 		
         ItemStack ironb = new ItemStack(Material.IRON_INGOT, 2);
         ItemMeta mironb = ironb.getItemMeta();
-        mironb.setDisplayName("Â§fEnchanted Iron");
+        mironb.setDisplayName("§fEnchanted Iron");
         mironb.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
         mironb.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ironb.setItemMeta(mironb);
 
         ItemStack obsi1 = new ItemStack(Material.IRON_BLOCK, 2);
         ItemMeta mobsi1 = obsi1.getItemMeta();
-        mobsi1.setDisplayName("Â§fEnchanted Iron Block");
+        mobsi1.setDisplayName("§fEnchanted Iron Block");
         mobsi1.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
         mobsi1.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         obsi1.setItemMeta(mobsi1);

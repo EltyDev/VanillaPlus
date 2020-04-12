@@ -17,7 +17,7 @@ public class CraftEnchantedIron {
 		
     ItemStack iron = new ItemStack(Material.IRON_INGOT, 2);
     ItemMeta miron = iron.getItemMeta();
-    miron.setDisplayName("Â§fEnchanted Iron");
+    miron.setDisplayName("§fEnchanted Iron");
     miron.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
     miron.addItemFlags(ItemFlag.HIDE_ENCHANTS);
     iron.setItemMeta(miron);
