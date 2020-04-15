@@ -32,7 +32,7 @@ public static void registerCraft() {
         ItemStack shovel = new ItemStack(Material.IRON_SHOVEL);
         ItemMeta mshovel = shovel.getItemMeta();
         mshovel.setDisplayName("§5✦ Perfect Shovel ✦");
-        mshovel.addEnchant(Enchantment.DIG_SPEED, 100, true);
+        mshovel.addEnchant(Enchantment.DIG_SPEED, 10, true);
         mshovel.addEnchant(Enchantment.DURABILITY, 10, true);
         mshovel.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         shovel.setItemMeta(mshovel);
