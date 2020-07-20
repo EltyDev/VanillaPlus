@@ -1,7 +1,7 @@
 # VanillaPlus
-Plugin en 1.15.2 sous Spigot rajoutant de petites nouvelles features 
+Plugin en 1.15.2 et 1.16.1 sous Spigot rajoutant de petites nouvelles features 
 
-# Nouveau Craft du Serveur :
+# Les Craft ajoutés :
 
 ###### Enchanted Iron Ingot :
 [![](https://i.gyazo.com/fbb962b917024588cdd4678ce084a69f.png)](http://https://i.gyazo.com/fbb962b917024588cdd4678ce084a69f.png)
@@ -17,6 +17,10 @@ Plugin en 1.15.2 sous Spigot rajoutant de petites nouvelles features
 ######  Perfect Pickaxe :
 
 [![](https://i.gyazo.com/b6675185df0081d7099ee17e7a40b0d3.png)](http://https://i.gyazo.com/b6675185df0081d7099ee17e7a40b0d3.png)
+
+###### Hammer :
+
+[![](https://media.discordapp.net/attachments/538082225099636737/698381033111814184/unknown.png)
 
 ######  Totem :
 
