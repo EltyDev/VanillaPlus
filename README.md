@@ -20,7 +20,7 @@ Plugin en 1.15.2 et 1.16.1 sous Spigot rajoutant de petites nouvelles features
 
 ###### Hammer :
 
-[![](https://media.discordapp.net/attachments/538082225099636737/698381033111814184/unknown.png)
+[![](https://i.gyazo.com/251937bd552f27c7e05d56ca79d07589.png)](https://i.gyazo.com/251937bd552f27c7e05d56ca79d07589.png)
 
 ######  Totem :
 
