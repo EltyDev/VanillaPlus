@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Xelox\Desktop\Plugin\VanillaPlus\.metadata\.plugins\org.eclipse.jdt.core
+3026318758.index
+3545259887.index

@@ -8,23 +8,27 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 
 import fr.venodez.vanillaplus.Main;
 
 public class CraftPerfectPickaxe {
 	
+
+	@SuppressWarnings("deprecation")
 	public static void registerCraft() {
 		
 		ItemStack iron = new ItemStack(Material.IRON_BLOCK, 2);
         ItemMeta miron = iron.getItemMeta();
-        miron.setDisplayName("Â§fEnchanted Iron Block");
+        miron.setDisplayName("§fEnchanted Iron Block");
         miron.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
         miron.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         iron.setItemMeta(miron);
 
-        ItemStack obsi = new ItemStack(Material.OBSIDIAN, 2);
-        ItemMeta mobsi = obsi.getItemMeta();
-        mobsi.setDisplayName("Â§fEnchanted Obsidian");
+        ItemStack obsi = new ItemStack(Material.PLAYER_HEAD);
+		SkullMeta mobsi = (SkullMeta) obsi.getItemMeta();
+		mobsi.setOwner("BlockOfObsidian");
+		mobsi.setDisplayName("§5Enchanted Obsidian");
         mobsi.addEnchant(Enchantment.FIRE_ASPECT, 1, true);
         mobsi.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         obsi.setItemMeta(mobsi);

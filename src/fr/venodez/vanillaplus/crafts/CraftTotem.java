@@ -15,16 +15,16 @@ public class CraftTotem {
 	
 	public static void registerCraft() {
 		
-        ItemStack obsi = new ItemStack(Material.OBSIDIAN, 2);
-        ItemMeta mobsi = obsi.getItemMeta();
-        mobsi.setDisplayName("Â§fEnchanted Obsidian");
-        mobsi.addEnchant(Enchantment.FIRE_ASPECT, 1, true);
-        mobsi.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        obsi.setItemMeta(mobsi);
+		ItemStack obsi = new ItemStack(Material.PAPER, 1);
+	    ItemMeta mobsi = obsi.getItemMeta();
+	    mobsi.setDisplayName("§fEnchanted Obsidian");
+	    mobsi.addEnchant(Enchantment.FIRE_ASPECT, 1, true);
+	    mobsi.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+	    obsi.setItemMeta(mobsi);
 
         ItemStack totem = new ItemStack(Material.TOTEM_OF_UNDYING);
         ItemMeta mtotem = totem.getItemMeta();
-        mtotem.setDisplayName("Â§eâœ¦ Totem Of Undying âœ¦");
+        mtotem.setDisplayName("§e¦ Totem Of Undying ¦");
         totem.setItemMeta(mtotem);
 
         NamespacedKey key = new NamespacedKey(Main.getPlugin(Main.class), "totem");

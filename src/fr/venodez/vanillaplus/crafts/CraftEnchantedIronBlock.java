@@ -8,28 +8,32 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 
 import fr.venodez.vanillaplus.Main;
 
 public class CraftEnchantedIronBlock {
-	
+
+	@SuppressWarnings("deprecation")
 	public static void registerCraft() {
+		
+		ItemStack IronB = new ItemStack(Material.PLAYER_HEAD);
+		SkullMeta IronBM = (SkullMeta) IronB.getItemMeta();
+		IronBM.setOwner("metalhedd");
+		IronBM.setDisplayName("§fEnchanted Iron Block");
+		IronBM.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
+		IronBM.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        IronB.setItemMeta(IronBM);
 		
         ItemStack ironb = new ItemStack(Material.IRON_INGOT, 2);
         ItemMeta mironb = ironb.getItemMeta();
-        mironb.setDisplayName("Â§fEnchanted Iron");
+        mironb.setDisplayName("§fEnchanted Iron");
         mironb.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
         mironb.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ironb.setItemMeta(mironb);
 
-        ItemStack obsi1 = new ItemStack(Material.IRON_BLOCK, 2);
-        ItemMeta mobsi1 = obsi1.getItemMeta();
-        mobsi1.setDisplayName("Â§fEnchanted Iron Block");
-        mobsi1.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
-        mobsi1.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        obsi1.setItemMeta(mobsi1);
-        NamespacedKey key = new NamespacedKey(Main.getPlugin(Main.class), "obsi1");
-        ShapedRecipe recipe = new ShapedRecipe(key, obsi1);
+        NamespacedKey key = new NamespacedKey(Main.getPlugin(Main.class), "enchantedironblock");
+        ShapedRecipe recipe = new ShapedRecipe(key, IronB);
         recipe.shape("OOO", "OBO", "OOO");
         recipe.setIngredient('O', ironb.getData());
         recipe.setIngredient('B', Material.IRON_BLOCK);

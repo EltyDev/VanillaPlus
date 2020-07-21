@@ -15,16 +15,19 @@ public class CraftEnchantedObsidian {
 	
 	public static void registerCraft() {
 		
-	    ItemStack obsi = new ItemStack(Material.OBSIDIAN, 2);
+	    ItemStack obsi = new ItemStack(Material.PAPER, 1);
 	    ItemMeta mobsi = obsi.getItemMeta();
-	    mobsi.setDisplayName("Â§fEnchanted Obsidian");
+	    mobsi.setDisplayName("§fEnchanted Obsidian");
 	    mobsi.addEnchant(Enchantment.FIRE_ASPECT, 1, true);
 	    mobsi.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 	    obsi.setItemMeta(mobsi);
+	    
+	    ItemStack Mobsi = new ItemStack(Material.OBSIDIAN, 12);
+	    
 	    NamespacedKey key = new NamespacedKey(Main.getPlugin(Main.class), "obsi");
 	    ShapedRecipe recipe = new ShapedRecipe(key, obsi);
 	    recipe.shape("OOO", "OOO", "OOO");
-	    recipe.setIngredient('O', Material.OBSIDIAN);
+	    recipe.setIngredient('O', Mobsi.getData());
 	    Bukkit.addRecipe(recipe);
 		
 	}
