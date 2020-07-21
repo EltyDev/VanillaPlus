@@ -35,7 +35,7 @@ public class CraftPerfectPickaxe {
 
         ItemStack pickaxe = new ItemStack(Material.IRON_PICKAXE);
         ItemMeta mpickaxe = pickaxe.getItemMeta();
-        mpickaxe.setDisplayName("§e✦ Perfect Pickaxe ✦");
+        mpickaxe.setDisplayName("§e✦  Perfect Pickaxe ✦");
         mpickaxe.addEnchant(Enchantment.DIG_SPEED, 10, true);
         mpickaxe.addEnchant(Enchantment.DURABILITY, 10, true);
         mpickaxe.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);

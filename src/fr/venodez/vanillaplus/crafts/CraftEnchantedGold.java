@@ -17,7 +17,7 @@ public class CraftEnchantedGold {
 		
         ItemStack ore = new ItemStack(Material.GOLD_INGOT, 2);
         ItemMeta more = ore.getItemMeta();
-        more.setDisplayName("Â§fEnchanted Gold Ingot");
+        more.setDisplayName("§fEnchanted Gold Ingot");
         more.addEnchant(Enchantment.KNOCKBACK, 3, true);
         more.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ore.setItemMeta(more);
